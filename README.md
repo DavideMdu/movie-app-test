@@ -9,9 +9,13 @@ This project is a full-stack application with a **Next.js** frontend and a **Pos
 ## Folder Structure
 
 ├── app/ # Holds the Next.js project
+
 ├── docker-compose.yml # Defines the PostgreSQL container
+
 ├── init.sql # SQL script to initialize the database with default credentials
+
 ├── setup.sh # Script to compile and run the entire project
+
 ├── Makefile # Makefile to execute the setup script
 
 ## Initial User Credentials
@@ -44,8 +48,16 @@ To set up and run the project, follow these steps:
    cd <project-directory>
    Run the setup script using the Makefile:
    ```
+2. **Create a free Cloudinary account and get the `api-key`, `api-secret`, `cloud-name`**
+3. **Duplicate `.env.example` file to `.env` add the above Cloudinary informations into the respective variable names inside the app/.env file**
 
-2. **Run the setup script using the Makefile**:
+```
+CLOUDINARY_CLOUD_NAME=cloud-name
+CLOUDINARY_API_KEY=api-key
+CLOUDINARY_API_SECRET=api-secret
+```
+
+4. **Run the setup script using the Makefile**:
    ```bash
    make run
    ```
