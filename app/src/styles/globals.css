@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-family-montserrat: 'Montserrat', sans-serif;
+}
+
+@layer components {
+  .heading-one {
+    @apply font-semibold md:text-[64px] md:leading-[80px] text-[48px] leading-[56px] tracking-normal;
+    font-family: var(--font-family-montserrat);
+  }
+
+  .heading-two {
+    @apply font-semibold text-[48px] leading-[56px] tracking-normal;
+    font-family: var(--font-family-montserrat);
+  }
+
+  .heading-three {
+    @apply font-semibold text-[32px] leading-[40px] tracking-normal;
+    font-family: var(--font-family-montserrat);
+  }
+
+  .heading-four {
+    @apply font-bold text-[24px] leading-[32px] tracking-normal;
+    font-family: var(--font-family-montserrat);
+  }
+
+  .heading-five {
+    @apply font-bold text-[20px] leading-[24px] tracking-normal;
+    font-family: var(--font-family-montserrat);
+  }
+
+  .heading-six {
+    @apply font-bold text-[16px] leading-[24px] tracking-normal;
+    font-family: var(--font-family-montserrat);
+  }
+
+  .body-large {
+    @apply font-normal text-[20px] leading-[32px] tracking-normal;
+    font-family: var(--font-family-montserrat);
+  }
+
+  .body-regular {
+    @apply font-normal text-[16px] leading-[24px] tracking-normal;
+    font-family: var(--font-family-montserrat);
+  }
+
+  .body-small {
+    @apply font-normal text-[14px] leading-[24px] tracking-normal;
+    font-family: var(--font-family-montserrat);
+  }
+
+  .body-extra-small {
+    @apply font-normal text-[12px] leading-[24px] tracking-normal;
+    font-family: var(--font-family-montserrat);
+  }
+
+  .caption {
+    @apply font-normal text-[14px] leading-[16px] tracking-normal;
+    font-family: var(--font-family-montserrat);
+  }
+}
+
+input {
+  @apply outline-none ring-0;
+}
